@@ -40,7 +40,7 @@ jQuery-like syntax
 
 Ideal for server-side HTML parsing
 
-🔹 Modular Scraper Design
+- Modular Scraper Design
 
 Each platform has its own scraper:
 
@@ -57,7 +57,6 @@ Easy to extend to new platforms
 Resistant to UI changes on one platform affecting others
 
 2. URL Detection Logic
-
 The platform is detected using regular expressions based on the active tab’s URL.
 
 const linkedinPattern = /^https?:\/\/(www\.)?linkedin\.com\/in\/[^\/\?]+/i;
@@ -70,23 +69,23 @@ Detection Flow:
 4.Based on the match, the correct scraper is selected.
 
 Supported URLs:
-https://www.linkedin.com/in/username
-https://www.instagram.com/username
+- https://www.linkedin.com/in/username
+- https://www.instagram.com/username
 
 Unsupported URLs:
-LinkedIn company pages
-Instagram posts or reels
-Any non-profile pages
+- LinkedIn company pages
+- Instagram posts or reels
+- Any non-profile pages
 
 3. How to Test LinkedIn vs Instagram Scraping
 
-Prerequisites
+Prerequisites:-
 1.Node.js installed
 2.Chrome browser
 3.Backend server running on http://localhost:3000
 4.Chrome extension loaded in Developer Mode
 
-Testing LinkedIn Profile Scraping
+Testing LinkedIn Profile Scraping:-
 1.Open Chrome
 2.Navigate to a LinkedIn profile page
 3.Open the Chrome extension popup
@@ -99,7 +98,7 @@ Testing LinkedIn Profile Scraping
 -Followers
 -Connections
 
-Testing Instagram Profile Scraping
+Testing Instagram Profile Scraping:-
 1.Navigate to an Instagram profile page
 2.Open the Chrome extension popup
 3.Confirm the platform badge shows Instagram
