@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Scraper</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Profile Scraper</h1>
+    
+    <div id="status" class="status"></div>
+    
+    <div class="url-info">
+      <div class="label">Current URL:</div>
+      <div class="value" id="currentUrl">Loading...</div>
+      <div id="platformBadge"></div>
+    </div>
+
+    <button id="sendButton">Send Page to Backend</button>
+
+    <div id="results" class="results">
+      <h3>Scraped Data:</h3>
+      <pre id="resultsContent"></pre>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
+
+

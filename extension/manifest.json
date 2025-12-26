@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Profile Scraper Extension",
+  "version": "1.0.0",
+  "description": "Capture and scrape LinkedIn and Instagram profiles via backend",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://www.linkedin.com/*",
+    "https://www.instagram.com/*",
+    "http://localhost/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon-16.svg",
+      "48": "icon-48.svg",
+      "128": "icon-128.svg"
+    }
+  },
+  "icons": {
+    "16": "icon-16.svg",
+    "48": "icon-48.svg",
+    "128": "icon-128.svg"
+  }
+}
+
